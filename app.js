@@ -21,7 +21,7 @@ const reviewRoutes = require("./routes/reviews.js");
 const userRoutes = require("./routes/users.js");
 
 //const dbUrl = process.env.DB_URL;
-const dbUrl = "mongodb://localhost:27017/yelp-camp";
+const dbUrl = process.env.DB_URL || "mongodb://localhost:27017/yelp-camp";
 
 const mongoSanitize = require("express-mongo-sanitize");
 const { name } = require("ejs");
