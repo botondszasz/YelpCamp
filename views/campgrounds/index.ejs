@@ -12,16 +12,16 @@
           <% if(campground.images.length) { %>
           <img
             crossorigin="anonymous"
-            src="<%= campground.images[0].url %>"
+            src="<%= campground.images[0].indexThumbnail %>"
             alt=""
-            class="img-fluid"
+            class="img-fluid rounded-start"
           />
           <% } else { %>
           <img
             crossorigin="anonymous"
             src="https://res.cloudinary.com/dke61jwv5/image/upload/v1713528047/YelpCamp/tq3xn9kj24iz8hn0pmsv.jpg"
             alt=""
-            class="img-fluid"
+            class="img-fluid rounded-start"
           />
           <% } %>
         </div>
